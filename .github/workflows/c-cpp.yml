@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: build
-      run: ./build.sh
+      run: g++ src/test_localhost/test_localhost.cpp -I./thirdparty/asio-1.12.1/include -lpthread -o test
     - name: run
       run: ./test
  
