@@ -1,1 +1,1 @@
-gcc src/test_localhost/test_localhost.cpp -o test -I./thirdparty/asio-1.12.1/include
+g++ src/test_localhost/test_localhost.cpp -I./thirdparty/asio-1.12.1/include -lpthread -o test
