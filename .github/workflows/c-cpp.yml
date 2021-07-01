@@ -16,5 +16,5 @@ jobs:
     - name: build
       run: g++ -DASIO_STANDALONE -std=c++11 src/test_localhost/test_localhost.cpp -I./thirdparty/asio-1.12.1/include -lpthread -o test
     - name: run
-      run: ./test
+      run: ./test 9000
  

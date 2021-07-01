@@ -57,7 +57,7 @@ class server
 {
 public:
   server(asio::io_context& io_context, short port)
-    : acceptor_(io_context, tcp::endpoint("127.0.0.1", port))
+    : acceptor_(io_context, tcp::endpoint(asio::ip::address_v4::from_string("127.0.0.1"), port))
   {
     do_accept();
   }
